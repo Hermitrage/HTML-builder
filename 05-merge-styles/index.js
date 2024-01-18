@@ -20,7 +20,7 @@ const bundleStyles = async () => {
     await fs.writeFile(outputFilePath, styles.join('\n'), 'utf-8');
     console.log('Bundle created successfully!');
   } catch (error) {
-    console.log('Error:', error);
+    console.log('Error:', error.message);
   }
 };
 

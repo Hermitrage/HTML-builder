@@ -62,7 +62,7 @@ const buildPage = async () => {
     await copyFile(assetsFolderPath, targetAssetsPath);
     console.log('assets folder copied successfully!');
   } catch (error) {
-    console.log('Error:', error);
+    console.log('Error:', error.message);
   }
 };
 
